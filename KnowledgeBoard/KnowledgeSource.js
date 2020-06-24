@@ -40,5 +40,23 @@ const KnowledgeSource = [
         type: "website",
         name: "MDN web docs",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    }
-];
+    },
+    {
+        onderwerp: "Tools",
+        type: "website",
+        name: "Postman",
+        link: "https://www.postman.com/"
+    },
+    {
+        onderwerp: "Tools",
+        type: "website",
+        name: "Pexels",
+        link: "https://www.pexels.com/nl-nl/"
+    }   
+]
+
+    
+    
+    
+    
+    

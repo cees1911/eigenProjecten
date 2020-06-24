@@ -6,9 +6,9 @@ function searchsSource(choise) {
   const findknowledge = KnowledgeSource.filter((filter) => {
     return filter.onderwerp.includes(choise);
   });
-
   putOnScreen(choise, findknowledge);
 }
+
 // Het plaatsen van data in de DOM
 function putOnScreen(logo, info) {
   switch (logo) {
@@ -28,16 +28,14 @@ function putOnScreen(logo, info) {
       document.getElementById("logoImage").src = "images/Tools.png";
       break;
   }
-  
+  // leeg halen van de <ul>
   while (getUl.firstChild) {
     getUl.firstChild.remove();
-}
+  }
 
-  for(let i = 0; i < info.length; i++){
-
-    let newLi = document.createElement("li"); 
-       
-    newLi.innerHTML= `<a target="_blank" href=${info[i].link}> ${info[i].name} </a>`; 
+  for (let i = 0; i < info.length; i++) {
+    let newLi = document.createElement("li");
+    newLi.innerHTML = `<a target="_blank" href=${info[i].link}> ${info[i].name} </a>`;
     getUl.appendChild(newLi);
   }
 }
