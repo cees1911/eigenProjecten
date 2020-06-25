@@ -36,7 +36,7 @@ const KnowledgeSource = [
         link: "https://scrimba.com/course/glearnreact/"
     },
     {
-        onderwerp: "Javescript",
+        onderwerp: "Javascript",
         type: "website",
         name: "MDN web docs",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
