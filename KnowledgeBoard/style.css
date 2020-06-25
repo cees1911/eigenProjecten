@@ -73,6 +73,7 @@ ul{
 
 .infodisplay{
   display: inline-block;
+  text-align: left;
   margin-top: 10px;
   background-color: #fff;
   border-radius: 5px;

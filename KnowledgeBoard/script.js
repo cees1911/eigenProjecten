@@ -43,7 +43,6 @@ function putOnScreen(logo, info) {
 // event listener voor de radio buttons
 Array.from(radioButton).forEach((button) => {
   button.addEventListener("change", () => {
-    const source = event.target.value;
-    searchsSource(source);
+    searchsSource(event.target.value);
   });
 });

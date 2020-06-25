@@ -52,11 +52,17 @@ const KnowledgeSource = [
         type: "website",
         name: "Pexels",
         link: "https://www.pexels.com/nl-nl/"
-    }   
+    },
+    {
+        onderwerp: "Tools",
+        type: "website",
+        name: "Font Awesome CDN",
+        link: "https://www.bootstrapcdn.com/fontawesome/"
+    } 
 ]
 
     
     
-    
+
     
     
