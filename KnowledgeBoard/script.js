@@ -5,18 +5,15 @@ const getUl = document.getElementById("infoList");
 function searchsSource(choice) {
   const findknowledge = KnowledgeSource.filter(filter => 
     filter.onderwerp.includes(choice));
-  putOnScreen(choice, findknowledge);
+    pushDataInDom(choice, findknowledge);
 }
 
 // Het plaatsen van data in de DOM
-function putOnScreen(logo, info) {
+function pushDataInDom(logo, info) {
 
   document.getElementById("logoImage").src = `images/${logo}.png`;
   
-  // leeg halen van de <ul>
-  while (getUl.firstChild) {
-    getUl.firstChild.remove();
-  }
+  getUl.innerHTML= "";  
 
   for (let i = 0; i < info.length; i++) {
     let newLi = document.createElement("li");

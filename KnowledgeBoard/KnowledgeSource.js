@@ -58,6 +58,12 @@ const KnowledgeSource = [
         type: "website",
         name: "Font Awesome CDN",
         link: "https://www.bootstrapcdn.com/fontawesome/"
+    },
+    {
+        onderwerp: "CSS3",
+        type: "Video",
+        name: "Input Animations With CSS",
+        link: "https://www.youtube.com/watch?v=IxRJ8vplzAo"
     } 
 ]
 
