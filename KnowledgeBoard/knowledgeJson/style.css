@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Sriracha&display=swap");
+
+:root {
+  --nav-font-color: #f2f2f2e5;
+  --nav-font-type: "Sriracha", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/moroccan.png);
+  background-size: cover;
+  background-color: rgb(84, 192, 241);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  color: var(--nav-font-color);
+  text-align: center;
+  justify-content: center;
+  padding: 5px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: var(--nav-font-type);
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.selectButton {
+  font-family: var(--nav-font-type);
+  justify-content: space-around;
+  text-align: center;
+  color: var(--nav-font-color);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.maincontent {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(84, 192, 241, 0.9);
+  width: 300px;
+  padding: 10px;
+}
+
+.logodisplay {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(84, 192, 241, 0.9);
+  width: 300px;
+  padding: 10px;
+}
+.logoImage{
+    border-style: none;
+}
+
+.infodisplay{
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(84, 192, 241, 0.9);
+  width: 300px;
+  padding: 10px;  
+  font-family: var(--nav-font-type);
+}
