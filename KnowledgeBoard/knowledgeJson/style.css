@@ -27,20 +27,36 @@ h1 {
   margin-bottom: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.mainMenu {
+  padding-left: 10px;
+}
+
 p {
   font-family: var(--nav-font-type);
   text-align: center;
   padding: 10px 5px;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  display: inline;
+}
+
 .selectButton {
+  display: inline-flexbox;
   font-family: var(--nav-font-type);
   justify-content: space-around;
   text-align: center;
   color: var(--nav-font-color);
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -67,11 +83,41 @@ ul{
   width: 300px;
   padding: 10px;
 }
-.logoImage{
-    border-style: none;
+
+.formForPost {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(84, 192, 241, 0.9);
+  width: 300px;
+  padding: 10px;
 }
 
-.infodisplay{
+.type {
+  margin-left: 25px;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.link {
+  margin-top: 10px;
+}
+
+.submit {
+  width: 90%;
+  background-color: grey;
+  color: var(--nav-font-color);
+  font-family: "Anton", sans-serif;
+}
+
+.logoImage {
+  border-style: none;
+}
+
+.infodisplay {
   display: inline-block;
   text-align: left;
   margin-top: 10px;
@@ -79,6 +125,6 @@ ul{
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(84, 192, 241, 0.9);
   width: 300px;
-  padding: 10px;  
+  padding: 10px;
   font-family: var(--nav-font-type);
 }

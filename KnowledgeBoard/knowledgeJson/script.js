@@ -1,16 +1,16 @@
 const radioButton = document.querySelectorAll(".selectButton");
 const getUl = document.getElementById("infoList");
 
-  //ophalen van de data
-  function fetchData(choice) {
-    fetch("knowledgesource.json")
+//ophalen van de data
+function fetchData(choice) {
+  fetch("knowledgesource.json")
     .then((res) => res.json())
     .then((data) => {
       const findknowledge = data.filter((filter) =>
-      filter.onderwerp.includes(choice));
-    pushDataInDom(choice, findknowledge);      
-    }  
-    );  
+        filter.onderwerp.includes(choice)
+      );
+      pushDataInDom(choice, findknowledge);
+    });
 }
 
 // Het plaatsen van data in de DOM
