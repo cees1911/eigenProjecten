@@ -1,0 +1,21 @@
+.header {
+    height: 80vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-beige, 0.6),
+        rgba($color-brown, 0.6)
+      ),
+      url("../img/dawn.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  
+    &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
