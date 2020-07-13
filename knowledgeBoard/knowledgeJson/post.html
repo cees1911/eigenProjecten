@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>KnowledgeBoard Post</title>
+  </head>
+  
+    <header>
+      <h1>Cees zijn kenniscenter</h1>
+    </header>
+    <nav>
+        <div class="mainMenu">      
+            <a href="index.html"><i class="fa">&#xf015;</i></a>
+            <a href="post.html"><i class="fa">&#xf0ee;</i></a>
+            <i class="fa">&#xf1f8;</i>
+      </div>      
+    </nav>
+    <main>
+      <div class="wrapper">
+        <div class="maincontent">
+          <p class="maintext">
+            Mijn eerste leerproject.  Fase 2: Intergreer JSON data.
+          </p>
+        </div>
+        <br/>
+        <div class="formForPost" id="formForPost">
+          <form class="postForm" id="postForm">
+            <select id="onderwerp">
+              <option>--Onderwerp--</option>
+              <option value="HTML5">HTML5</option>
+              <option value="CSS3">CSS3</option>
+              <option value="Javascript">Javascript</option>
+              <option value="React">React</option>
+              <option value="Tools">Tools</option>
+            </select>
+            <select id="type" class="type">
+              <option>--Type--</option>
+              <option value="website">website</option>
+              <option value="video">video</option>
+            </select>
+            <input id="name" class="name" type="text" 
+            placeholder="Name" required autocomplete="off">
+            <input id="link" class="link" type="text" 
+            placeholder="Link" required autocomplete="off">
+            <br/><br/>
+            <input type="submit" class="submit" value="Submit">
+          </form>
+        </div>
+       
+       
+      </div>
+  </main>    
+    <script src="scriptPost.js"></script>
+  </body>
+</html>

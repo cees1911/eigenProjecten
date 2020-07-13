@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>KnowledgeBoard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cees zijn kenniscenter</h1>
+    </header>
+    <nav>
+      <div class="selectButton">
+        <input type="radio" id="knowledgeChoice" name="select" value="HTML5" />
+        <label for="knowledgeChoice">HTML5</label>
+        <input type="radio" id="knowledgeChoice" name="select" value="CSS3" />
+        <label for="knowledgeChoice">CSS3</label>
+        <input type="radio" id="knowledgeChoice" name="select" value="Javascript"/>
+        <label for="knowledgeChoice">Javascript</label>
+        <input type="radio" id="knowledgeChoice" name="select" value="React" />
+        <label for="knowledgeChoice">React</label>
+        <input type="radio" id="knowledgeChoice" name="select" value="Tools" />
+        <label for="knowledgeChoice">Tools</label>
+      </div>
+    </nav>
+    <main>
+      <div class="wrapper">
+        <div class="maincontent">
+          <p class="maintext">
+            Mijn eerste leerproject.  Fase 1 schrijf een zo compact mogelijk javascript.
+          </p>
+        </div>
+        <br/>
+        <div id="logodisplay" class="logodisplay">
+          <img id="logoImage" src="images/white.png" alt=" " width="72" height="80" />
+        </div>
+        <br/>
+       <div class="infodisplay">
+          <ul id="infoList">
+          </ul>
+        </div>
+      </div>
+  </main>
+    <script src="KnowledgeSource.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
