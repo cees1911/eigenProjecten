@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Input Animations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h3>Register with us</h3>
+        <div class="form-element">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            autocomplete="off"
+            required
+          />
+          <label for="name" class="label-name">
+            <span class="content-name">Name</span>
+          </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            autocomplete="off"
+            required
+          />
+          <label for="email" class="label-name">
+            <span class="content-name">E-mail</span>
+          </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+            required
+          />
+          <label for="password" class="label-name">
+            <span class="content-name">Password</span>
+          </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            autocomplete="off"
+            required
+          />
+          <label for="password2" class="label-name">
+            <span class="content-name">Confirm Password</span>
+          </label>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
