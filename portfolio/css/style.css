@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(220, 198, 141, 0.6),
+      rgba(189, 90, 55, 0.6)
+    ),
+    url("../img/dawn.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 1rem;
+  font-family: "Cinzel", serif;
+  box-sizing: border-box;
+}
+
+.heading-primary {
+  color: #241b20;
+  text-transform: uppercase;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 40rem;
+  letter-spacing: 3rem;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 70rem;
+  letter-spacing: 0.95rem;
+}
