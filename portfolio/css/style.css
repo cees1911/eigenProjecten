@@ -1,56 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
-
-.header {
-  height: 80vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(220, 198, 141, 0.6),
-      rgba(189, 90, 55, 0.6)
-    ),
-    url("../img/dawn.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-}
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
 
 body {
   padding: 1rem;
-  font-family: "Cinzel", serif;
-  box-sizing: border-box;
-}
+  font-family: "Cinzel", serif; }
 
 .heading-primary {
   color: #241b20;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 40rem;
+    letter-spacing: 3rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 70rem;
+    letter-spacing: 0.95rem; }
+
+.heading-secondary {
+  font-size: 3rem;
   text-transform: uppercase;
-}
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .9rem;
+  background-image: linear-gradient(to right, #a07857, #bd5a37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .4rem; }
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 40rem;
-  letter-spacing: 3rem;
-}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 70rem;
-  letter-spacing: 0.95rem;
-}
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 40%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.2rem;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 3.5rem; }
+    .composition__photo--p3 {
+      left: 25%;
+      top: 12rem; }
+    .composition__photo--p4 {
+      left: 45%;
+      top: 0; }
+    .composition__photo--p5 {
+      left: 0;
+      top: 15rem; }
+    .composition__photo:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(to right bottom, rgba(220, 198, 141, 0.6), rgba(189, 90, 55, 0.6)), url("../img/dawn.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.section__introduction {
+  margin-top: 8rem; }

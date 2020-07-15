@@ -1,41 +1,13 @@
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/_base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/composition";
+
+@import "layout/grid";
 @import "layout/header";
 
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  padding: 1rem;
-  font-family: "Cinzel", serif;
-  box-sizing: border-box;
-}
-
-.heading-primary {  
-  color: #241b20;
-  text-transform: uppercase;
-}
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 40rem;
-  letter-spacing: 3rem;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 70rem;
-  letter-spacing: 0.95rem;
-}
+@import "pages/home";
