@@ -1,0 +1,21 @@
+.textbox {
+  position: relative;
+  width: 50%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+
+  &__img {
+    width: 35%;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__header {
+    display: inline-block;
+    position: absolute;
+
+    top: 3rem;
+    right: 3rem;
+  }
+}

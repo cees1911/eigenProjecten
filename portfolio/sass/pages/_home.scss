@@ -1,5 +1,20 @@
 .section__introduction {
- 
   margin-top: 8rem;
-  
+}
+
+.section__projects {
+  margin-top: 8rem;
+
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-beige, 0.9),
+      rgba($color-brown, 0.9)
+    ),
+    url("../img/wolken.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 7% 50%, 0 0);
 }

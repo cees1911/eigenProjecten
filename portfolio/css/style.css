@@ -32,12 +32,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  letter-spacing: .9rem;
+  letter-spacing: 0.9rem;
   background-image: linear-gradient(to right, #a07857, #bd5a37);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .4rem; }
+  letter-spacing: 0.4rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -48,6 +48,10 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.paragraph__textbox {
+  font-size: 1.4rem;
+  padding-bottom: 2rem; }
 
 .u-center-text {
   text-align: center; }
@@ -107,6 +111,22 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
 
+.textbox {
+  position: relative;
+  width: 50%;
+  padding-top: 1rem;
+  padding-left: 1rem; }
+  .textbox__img {
+    width: 35%;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-bottom: 2rem; }
+  .textbox__header {
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -127,6 +147,25 @@ body {
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
 
+.section__projects-grid {
+  width: 90rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem 10rem repeat(2, 25rem);
+  grid-gap: .5rem; }
+  .section__projects-grid-header {
+    grid-column: 1 / span 2;
+    align-self: center;
+    justify-self: center; }
+  .section__projects-grid-explain {
+    grid-column: 1 / span 2; }
+  .section__projects-grid-project1 {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/code.jpg);
+    background-size: cover;
+    border-radius: 0.3rem; }
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to right bottom, rgba(220, 198, 141, 0.6), rgba(189, 90, 55, 0.6)), url("../img/dawn.jpg");
@@ -142,3 +181,12 @@ body {
 
 .section__introduction {
   margin-top: 8rem; }
+
+.section__projects {
+  margin-top: 8rem;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(220, 198, 141, 0.9), rgba(189, 90, 55, 0.9)), url("../img/wolken.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 7% 50%, 0 0); }

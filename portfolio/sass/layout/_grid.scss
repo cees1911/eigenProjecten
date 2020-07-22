@@ -30,3 +30,37 @@
     );
   }
 }
+
+.section__projects-grid {
+  width: 90rem;
+  margin: 1rem auto;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem 10rem repeat(2, 25rem);
+  grid-gap: .5rem;
+
+  &-header {
+    grid-column: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &-explain {
+    grid-column: 1 / span 2;
+  }
+
+  &-project1 {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(/img/code.jpg);
+    background-size: cover;
+    border-radius: 0.3rem;
+   
+  }
+}
