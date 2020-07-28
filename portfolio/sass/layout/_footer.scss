@@ -1,0 +1,10 @@
+.footer {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-beige, 0.6),
+    rgba($color-brown, 0.6)
+  );
+  font-size: 1.3rem;
+
+  clip-path: polygon(0% 0%, 95% 0%, 97% 50%, 95% 100%, 0% 100% );
+}

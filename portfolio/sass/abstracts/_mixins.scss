@@ -5,3 +5,42 @@
         clear: both;
     }
 }
+
+//media query manager
+/*
+0 - 600 px      phone
+600 - 900px     tablet - portrait
+600 - 1200px    tablet - landscape
+1200 - 1800px   is the normal CSS
+1800 px +>      big screen
+
+$breakpoint argument keuze:
+phone
+tab-port
+big-desktop
+
+order:
+base + typography
+general layout en grid
+page layout en components
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == tab_port {
+      @media (max-width: 56.25em) {
+        @content;
+      } //900px
+    }
+    
+    @if $breakpoint == big_desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      } //1800px
+    }
+  }

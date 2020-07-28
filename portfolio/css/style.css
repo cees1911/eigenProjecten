@@ -1,3 +1,21 @@
+/*
+0 - 600 px      phone
+600 - 900px     tablet - portrait
+600 - 1200px    tablet - landscape
+1200 - 1800px   is the normal CSS
+1800 px +>      big screen
+
+$breakpoint argument keuze:
+phone
+tab-port
+big-desktop
+
+order:
+base + typography
+general layout en grid
+page layout en components
+1em = 16px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +70,9 @@ body {
 .paragraph__textbox {
   font-size: 1.4rem;
   padding-bottom: 2rem; }
+
+.contact a {
+  text-decoration: none; }
 
 .u-center-text {
   text-align: center; }
@@ -127,6 +148,11 @@ body {
     top: 3rem;
     right: 3rem; }
 
+.footer {
+  background-image: linear-gradient(to right bottom, rgba(220, 198, 141, 0.6), rgba(189, 90, 55, 0.6));
+  font-size: 1.3rem;
+  clip-path: polygon(0% 0%, 95% 0%, 97% 50%, 95% 100%, 0% 100%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -154,7 +180,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10rem 10rem repeat(2, 25rem);
-  grid-gap: .5rem; }
+  grid-gap: 0.7rem; }
   .section__projects-grid-header {
     grid-column: 1 / span 2;
     align-self: center;
@@ -165,6 +191,18 @@ body {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/code.jpg);
     background-size: cover;
     border-radius: 0.3rem; }
+
+.footer__grid {
+  width: 100rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10rem 5rem; }
+  .footer__grid-header1 {
+    align-self: center; }
+  .footer__grid-header2 {
+    align-self: center; }
 
 .header {
   height: 80vh;

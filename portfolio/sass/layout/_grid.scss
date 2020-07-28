@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10rem 10rem repeat(2, 25rem);
-  grid-gap: .5rem;
+  grid-gap: 0.7rem;
 
   &-header {
     grid-column: 1 / span 2;
@@ -61,6 +61,23 @@
       url(/img/code.jpg);
     background-size: cover;
     border-radius: 0.3rem;
-   
+  }
+}
+
+.footer__grid {
+  width: 100rem;
+  margin: 1rem auto;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10rem 5rem;
+
+  &-header1 {
+    align-self: center;
+  }
+
+  &-header2 {
+    align-self: center;
   }
 }
