@@ -211,6 +211,9 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  @media (max-width: 75em) {
+    .header {
+      height: 50vh; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -228,3 +231,6 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 7% 50%, 0 0); }
+  @media (max-width: 75em) {
+    .section__projects {
+      height: 70vh; } }

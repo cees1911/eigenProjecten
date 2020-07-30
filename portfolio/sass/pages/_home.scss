@@ -11,10 +11,14 @@
       rgba($color-beige, 0.9),
       rgba($color-brown, 0.9)
     ),
-    url("../img/wolken.jpg");
+    url('../img/wolken.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
 
   clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 7% 50%, 0 0);
+
+  @include respond(tab_land) {
+    height: 70vh;
+  }
 }

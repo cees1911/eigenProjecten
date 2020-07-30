@@ -37,6 +37,12 @@ page layout en components
         @content;
       } //900px
     }
+
+    @if $breakpoint == tab_land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px = 75em
+    }
     
     @if $breakpoint == big_desktop {
       @media (min-width: 112.5em) {
