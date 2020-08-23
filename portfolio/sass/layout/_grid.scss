@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10rem 10rem repeat(2, 25rem);
-  grid-gap: 0.7rem;
+  grid-gap: 1.25rem;
 
   &-header {
     grid-column: 1 / span 2;
@@ -59,6 +59,17 @@
         transparent 50%
       ),
       url(/img/code.jpg);
+    background-size: cover;
+    border-radius: 0.3rem;
+  }
+  &-project2 {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(/img/stars.jpg);
     background-size: cover;
     border-radius: 0.3rem;
   }
